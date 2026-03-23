@@ -12,7 +12,7 @@ import FileRouter from "./routers/File.router.js";
 import fileUpload from "express-fileupload";
 import connetCloud from "./config/cloudinary.js";
 import path from "path";
-import job from "./config/cron.js";
+// import job from "./config/cron.js";
 
 dotenv.config();
 const app = express();
@@ -21,7 +21,7 @@ const port = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
 
-job.start(); 
+// job.start(); 
 
 app.use(
   cors({
